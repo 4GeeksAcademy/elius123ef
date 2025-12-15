@@ -1,112 +1,93 @@
-# Data Science Project Boilerplate
+Proyecto de Machine Learning – Ciencia de Datos
+📌 Descripción del proyecto
 
-This boilerplate is designed to kickstart data science projects by providing a basic setup for database connections, data processing, and machine learning model development. It includes a structured folder organization for your datasets and a set of pre-defined Python packages necessary for most data science tasks.
+Este proyecto tiene como objetivo aplicar un flujo completo de Ciencia de Datos y Machine Learning, desde la exploración y limpieza de datos hasta el entrenamiento y evaluación de modelos predictivos. El proyecto se desarrolla como parte de mi formación en Ciencia de Datos y busca demostrar habilidades prácticas en análisis de datos, modelado y uso de buenas prácticas con GitHub.
 
-## Structure
+🎯 Objetivo
 
-The project is organized as follows:
+Analizar un conjunto de datos real
 
-- **`src/app.py`** → Main Python script where your project will run.
-- **`src/explore.ipynb`** → Notebook for exploration and testing. Once exploration is complete, migrate the clean code to `app.py`.
-- **`src/utils.py`** → Auxiliary functions, such as database connection.
-- **`requirements.txt`** → List of required Python packages.
-- **`models/`** → Will contain your SQLAlchemy model classes.
-- **`data/`** → Stores datasets at different stages:
-  - **`data/raw/`** → Raw data.
-  - **`data/interim/`** → Temporarily transformed data.
-  - **`data/processed/`** → Data ready for analysis.
+Extraer insights relevantes mediante exploración y visualización de datos
+
+Entrenar y evaluar modelos de Machine Learning
+
+Documentar el proceso de forma clara y reproducible
+
+🗂️ Estructura del proyecto
+├── data/            # Datos crudos y procesados
+├── notebooks/       # Jupyter Notebooks con análisis y modelos
+├── src/             # Scripts de procesamiento y entrenamiento
+├── models/          # Modelos entrenados
+├── README.md        # Documentación del proyecto
+🔍 Análisis Exploratorio de Datos (EDA)
+
+Limpieza de datos (valores nulos, duplicados, formatos)
+
+Análisis estadístico descriptivo
+
+Visualización de variables clave
+
+Identificación de patrones y relaciones entre variables
+
+Herramientas utilizadas:
+
+Pandas
+
+NumPy
+
+Matplotlib / Seaborn
+
+🤖 Modelos de Machine Learning
+
+Selección de variables (feature engineering)
+
+División de datos en entrenamiento y prueba
+
+Entrenamiento de modelos (por ejemplo: regresión logística, árboles, random forest)
+
+Evaluación con métricas como accuracy, precision, recall o RMSE
+
+📊 Resultados
+
+Comparación del rendimiento de los modelos
+
+Interpretación de resultados
+
+Conclusiones basadas en los datos
 
 
-## ⚡ Initial Setup in Codespaces (Recommended)
+🛠️ Tecnologías utilizadas
 
-No manual setup is required, as **Codespaces is automatically configured** with the predefined files created by the academy for you. Just follow these steps:
+Python
 
-1. **Wait for the environment to configure automatically**.
-   - All necessary packages and the database will install themselves.
-   - The automatically created `username` and `db_name` are in the **`.env`** file at the root of the project.
-2. **Once Codespaces is ready, you can start working immediately**.
+Pandas
 
+NumPy
 
-## 💻 Local Setup (Only if you can't use Codespaces)
+Scikit-learn
 
-**Prerequisites**
+Matplotlib / Seaborn
 
-Make sure you have Python 3.11+ installed on your machine. You will also need pip to install the Python packages.
+Jupyter Notebook
 
-**Installation**
+Git / GitHub
 
-Clone the project repository to your local machine.
+🚀 Próximos pasos
 
-Navigate to the project directory and install the required Python packages:
+Optimización de hiperparámetros
 
-```bash
-pip install -r requirements.txt
-```
+Pruebas con otros algoritmos
 
-**Create a database (if necessary)**
+Mejora de visualizaciones
 
-Create a new database within the Postgres engine by customizing and executing the following command:
+Documentación más detallada de resultados
 
-```bash
-$ psql -U postgres -c "DO \$\$ BEGIN 
-    CREATE USER my_user WITH PASSWORD 'my_password'; 
-    CREATE DATABASE my_database OWNER my_user; 
-END \$\$;"
-```
-Connect to the Postgres engine to use your database, manipulate tables, and data:
+👤 Autor
 
-```bash
-$ psql -U my_user -d my_database
-```
+Elius
+Estudiante de Ciencia de Datos
+GitHub: https://github.com/elius123ef
 
-Once inside PSQL, you can create tables, run queries, insert, update, or delete data, and much more!
+📎 Nota
 
-**Environment Variables**
-
-Create a .env file in the root directory of the project to store your environment variables, such as your database connection string:
-
-```makefile
-DATABASE_URL="postgresql://<USER>:<PASSWORD>@<HOST>:<PORT>/<DB_NAME>"
-
-#example
-DATABASE_URL="postgresql://my_user:my_password@localhost:5432/my_database"
-```
-
-## Running the Application
-
-To run the application, execute the app.py script from the root directory of the project:
-
-```bash
-python src/app.py
-```
-
-## Adding Models
-
-To add SQLAlchemy model classes, create new Python script files within the models/ directory. These classes should be defined according to your database schema.
-
-Example model definition (`models/example_model.py`):
-
-```py
-from sqlalchemy.orm import declarative_base
-from sqlalchemy import String
-from sqlalchemy.orm import Mapped, mapped_column
-
-Base = declarative_base()
-
-class ExampleModel(Base):
-    __tablename__ = 'example_table'
-    id: Mapped[int] = mapped_column(primary_key=True)
-    username: Mapped[str] = mapped_column(unique=True)
-```
-
-## Working with Data
-
-You can place your raw datasets in the data/raw directory, intermediate datasets in data/interim, and processed datasets ready for analysis in data/processed.
-
-To process data, you can modify the app.py script to include your data processing steps, using pandas for data manipulation and analysis.
-
-## Contributors
-
-This template was built as part of the [Data Science and Machine Learning Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning) by 4Geeks Academy by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Learn more about [4Geeks Academy BootCamp programs](https://4geeksacademy.com/us/programs) here.
-
-Other templates and resources like this can be found on the school's GitHub page.
+Este proyecto forma parte de mi portafolio como Científico de Datos Junior, enfocado en demostrar habilidades prácticas y capacidad de resolver problemas con datos.
