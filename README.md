@@ -1,94 +1,100 @@
-Proyecto de Machine Learning – Ciencia de Datos
-📌 Descripción del proyecto
+# Proyecto de Machine Learning – Ciencia de Datos
+## 📌 Descripción del proyecto
 
 Este proyecto tiene como objetivo aplicar un flujo completo de Ciencia de Datos y Machine Learning, desde la exploración y limpieza de datos hasta el entrenamiento y evaluación de modelos predictivos. El proyecto se desarrolla como parte de mi formación en Ciencia de Datos y busca demostrar habilidades prácticas en análisis de datos, modelado y uso de buenas prácticas con GitHub.
 
-🎯 Objetivo
+## 🎯 Objetivo
 
-Analizar un conjunto de datos real
+- Analizar un conjunto de datos real
 
-Extraer insights relevantes mediante exploración y visualización de datos
+- Extraer insights relevantes mediante exploración y visualización de datos
 
-Entrenar y evaluar modelos de Machine Learning
+- Entrenar y evaluar modelos de Machine Learning
 
-Documentar el proceso de forma clara y reproducible
+- Documentar el proceso de forma clara y reproducible
 
-🗂️ Estructura del proyecto
-├── data/            # Datos crudos y procesados
-├── notebooks/       # Jupyter Notebooks con análisis y modelos
-├── src/             # Scripts de procesamiento y entrenamiento
-├── models/          # Modelos entrenados
-├── README.md        # Documentación del proyecto
+## 🗂️ Estructura del proyecto
+- ├── data/            # Datos crudos y procesados
 
-🔍 Análisis Exploratorio de Datos (EDA)
+- ├── notebooks/       # Jupyter Notebooks con análisis y modelos
 
-Limpieza de datos (valores nulos, duplicados, formatos)
+- ├── src/             # Scripts de procesamiento y entrenamiento
 
-Análisis estadístico descriptivo
+- ├── models/          # Modelos entrenados
 
-Visualización de variables clave
+- ├── README.md        # Documentación del proyecto
 
-Identificación de patrones y relaciones entre variables
+## 🔍 Análisis Exploratorio de Datos (EDA)
 
-Herramientas utilizadas:
+- Limpieza de datos (valores nulos, duplicados, formatos)
 
-Pandas
+- Análisis estadístico descriptivo
 
-NumPy
+- Visualización de variables clave
 
-Matplotlib / Seaborn
+- Identificación de patrones y relaciones entre variables
 
-🤖 Modelos de Machine Learning
+## Herramientas utilizadas:
 
-Selección de variables (feature engineering)
+- Pandas
 
-División de datos en entrenamiento y prueba
+- NumPy
 
-Entrenamiento de modelos (por ejemplo: regresión logística, árboles, random forest)
+- Matplotlib / Seaborn
 
-Evaluación con métricas como accuracy, precision, recall o RMSE
+## 🤖 Modelos de Machine Learning
 
-📊 Resultados
+- Selección de variables (feature engineering)
 
-Comparación del rendimiento de los modelos
+- División de datos en entrenamiento y prueba
 
-Interpretación de resultados
+- Entrenamiento de modelos (por ejemplo: regresión logística, árboles, random forest)
 
-Conclusiones basadas en los datos
+- Evaluación con métricas como accuracy, precision, recall o RMSE
+
+## 📊 Resultados
+
+- Comparación del rendimiento de los modelos
+
+- Interpretación de resultados
+
+- Conclusiones basadas en los datos
 
 
-🛠️ Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas
 
-Python
+- Python
 
-Pandas
+- Pandas
 
-NumPy
+- NumPy
 
-Scikit-learn
+- Scikit-learn
 
-Matplotlib / Seaborn
+- Matplotlib / Seaborn
 
-Jupyter Notebook
+- Jupyter Notebook
 
-Git / GitHub
+- Git / GitHub
 
-🚀 Próximos pasos
+## 🚀 Próximos pasos
 
-Optimización de hiperparámetros
+- Optimización de hiperparámetros
 
-Pruebas con otros algoritmos
+- Pruebas con otros algoritmos
 
-Mejora de visualizaciones
+- Mejora de visualizaciones
 
-Documentación más detallada de resultados
+- Documentación más detallada de resultados
 
-👤 Autor
+## 👤 Autor
 
-Elius
+Elius Trujillo
+
 Estudiante de Ciencia de Datos
+
 GitHub: https://github.com/elius123ef
 
-📎 Nota
+## 📎 Nota
 
 Este proyecto forma parte de mi portafolio como Científico de Datos Junior, enfocado en demostrar habilidades prácticas y capacidad de resolver problemas con datos.
